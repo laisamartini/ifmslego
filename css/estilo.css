@@ -1,120 +1,111 @@
 body{
-
-}
-*{
-    margin:0;
-    padding:0;
-    border:0;
-    border-top:0;
-}
-h1{
-	border-right:2vh
-	margin-left:2vh;
-	color:darkblue;
-	font-family:Arial;
+	font-family: Arial;
 }
 .pai{
-	background-color:white;
-    width:100%;
-    height:40vh;
-	display:flex;
-	flex-wrap:wrap;
+	width: 100%;
+	height: 50vh;
+	background-color: white;
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
-.filho{ /*aba*/
-    width:15%;
-	height:20vh;
-	background-color:darkgreen;
-	display:flex;
-	justify-content:center;
+.filho1{
+	width: 15%;
+	height: 40%;
+	background-color: rgb(7,82,0);
+	justify-content: center;
 }
-.filho img{
-	margin-top:2vh;
+#logo{
+	margin-left: 25%;
+	margin-top: 10%;
 }
 .filho2{
-	width:85%;
-	height:20vh;
-	background-color:darkgreen;
-	display:flex;
-	justify-content:flex-end;
+	width: 85%;
+	height: 40%;
+	background-color: rgb(7,82,0);
 }
-.filho2 input{
-	font-size:20px;
-	color:green;
-	font-family:Georgia;
-	border-color:green;
-	height:5vh;
-	width:30vh;
-	margin-top:5vh;
-	margin-right:3vh;
+input{
+	color: rgb(7,82,0);
+	margin-top: 5vh;
+	margin-left: 80%;
+	background-color: white;
+	border-radius: 5px
+	width: 50vh;
+}
+input::placeholder{
+   color: rgb(7,82,0);
 }
 .filho3{
-    width:100%;
-	height:20vh;
-	background-color:lightgray;
-	display:flex;
-	justify-content:center;
+	width: 100%;
+	height: 22vh;
+	background-color: rgb(225,225,225);
 }
-.filho3 img{
-	margin-top:2vh;
+#banner{
+	margin-left: 35%;
+	margin-top: 2%;
 }
 .filho4{
-	height:30vh;
-	width:50%;
-	background-color:white;
-	display:flex;
-	flex-wrap: wrap; 
-	justify-content: center;
-
+	width: 70%;
+	height: 60vh;
+	background-color: white;
+	color: blue;
 }
-.filhonoticias{
-	width:100%;
-	height:64vh;
-	background-color:white;
-	margin-left:3vh;
-	margin-top:2vh;
-
+h1{
+	margin-left: 8%;
+}
+#reitor{
+	margin-top: 1%;
+	margin-left: 5%;
+}
+#dir{
+	width: 55vh;
+	height: 15vh;
+	margin-left: -10vh;
+	margin-top: 3%;
+}
+#dire{
+	width: 55vh;
+	height: 25vh;
+	margin-left: -10vh;
+	margin-top: 3%;
 }
 .filho5{
-	height:50vh;
-	width:50%;
-	background-color:white;
-	display:flex;
-	flex-wrap: wrap;
-	flex-direction:colum;
+	width: 30%;
+	height: 60vh;
+	background-color: white;
 }
-.filhonoticias1{
-    width:80%;
-	height:30vh;
-	background-color:white;
-	margin-left:10vh;
-	margin-top:2vh;
+footer{
+	width: 100%;
+	height: 50%;
+	background-color: rgb(7,82,0);
+	margin-top: 12%;
 }
-.filhonoticias2{
-    width:80%;
-	height:20vh;
-	background-color:white;
-	margin-left:10vh;
-	margin-top:-2vh;
-	
-}
-.filhonoticias3{
-    width:80%;
-	height:20vh;
-	background-color:white;
-	margin-left:10vh;
-	margin-top:-2vh;
-}
-.filhonoticias4{
-    width:80%;
-	height:20vh;
-	background-color:white;
-	margin-left:10vh;
-	margin-top:-2vh;
-}
-
-.filhoabafinal{
-	width:100%;
-	background-color:darkgreen;
-	height:20vh;
-	margin-top:50vh;
+@media(max-width: 760px){
+	.filho1, .filho5{
+		width: 100%;
+	}
+	.filho2, .filho3{
+		display: none;
+	}
+	#logo{
+		width: 15%;
+		margin-left: 40%;
+	}
+	#reitor{
+		width: 50vh;
+		height: auto;
+		align-self: center;
+	}
+	h1{
+		font-size: 200%;
+		width: 50vh;
+	}
+	#dir, #dire{
+		margin-left: 2%;
+	}
+	footer{
+		margin-top: 40%;
+		width: 100%;
+	}
 }
